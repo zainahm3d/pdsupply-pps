@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FPF2895UCX
+D Load Switch IC 5A 28V WLCSP-12
+K
+F http://static6.arrow.com/aropdfconversion/42e2c531d828d813d52774c7ac75f1e68f1f2dfe/3669586278616490fpf2895.pdf
+$ENDCMP
+#
+#End Doc Library

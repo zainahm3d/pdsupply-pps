@@ -7,4 +7,6 @@
   (lib (name "LTM8026IV_PBF")(type "Legacy")(uri "${KIPRJMOD}/components/LTM8026IV_PBF/LTM8026IV_PBF.lib")(options "")(descr ""))
   (lib (name "BMD-340-A-R")(type "Legacy")(uri "${KIPRJMOD}/components/BMD-340-A-R/BMD-340-A-R.lib")(options "")(descr ""))
   (lib (name "ACS71240KEXBLT-050U5")(type "Legacy")(uri "${KIPRJMOD}/components/ACS71240KEXBLT-050U5/ACS71240KEXBLT-050U5.lib")(options "")(descr ""))
+  (lib (name "FPF2895UCX")(type "Legacy")(uri "${KIPRJMOD}/components/FPF2895/FPF2895UCX.lib")(options "")(descr ""))
+  (lib (name "LTM8083EY#PBF")(type "Legacy")(uri "${KIPRJMOD}/components/ltm8083/LTM8083EY#PBF.lib")(options "")(descr ""))
 )

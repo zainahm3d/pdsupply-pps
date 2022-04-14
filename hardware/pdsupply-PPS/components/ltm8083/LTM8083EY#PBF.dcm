@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTM8083EY#PBF
+D Switching Voltage Regulators 36Vin, 1.25A Buck-Boost uModule Reg
+K
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ltm8083.pdf
+$ENDCMP
+#
+#End Doc Library
