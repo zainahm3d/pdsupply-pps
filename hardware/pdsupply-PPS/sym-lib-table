@@ -9,4 +9,5 @@
   (lib (name "FPF2895UCX")(type "Legacy")(uri "${KIPRJMOD}/components/FPF2895/FPF2895UCX.lib")(options "")(descr ""))
   (lib (name "LTM8083EY#PBF")(type "Legacy")(uri "${KIPRJMOD}/components/ltm8083/LTM8083EY#PBF.lib")(options "")(descr ""))
   (lib (name "RCU-0C")(type "Legacy")(uri "${KIPRJMOD}/components/RCU-0C/RCU-0C.lib")(options "")(descr ""))
+  (lib (name "TC2030-IDC")(type "Legacy")(uri "${KIPRJMOD}/components/TC2030-IDC/TC2030-IDC.lib")(options "")(descr ""))
 )
