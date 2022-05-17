@@ -1,6 +1,6 @@
 (footprint "GCT_USB4505-03-0-A_REVA" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 622E1E5B)
+  (tedit 6282EA1B)
   (attr through_hole)
   (fp_text reference "REF**" (at -2.375 -9.045) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
@@ -2055,4 +2055,9 @@
   (pad "S2" thru_hole oval (at 5.62 -4) (size 0.8 1.6) (drill oval 0.6 1.4) (layers *.Cu) (tstamp 9702d639-3b1f-4825-8985-b32b9008503d))
   (pad "S3" thru_hole oval (at -5.62 -4) (size 0.8 1.6) (drill oval 0.6 1.4) (layers *.Cu) (tstamp 0d35483a-0b12-46cc-b9f2-896fd6831779))
   (pad "S4" thru_hole oval (at 5.62 0) (size 0.95 1.9) (drill oval 0.6 1.8) (layers *.Cu) (tstamp 4e66a44f-7fa6-4e16-bf9b-62ec864301a5))
+  (model "${KIPRJMOD}/components/USB4505-03-0-A_REVA/USB4505-03-0-A_REVA.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
