@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.09999999999999999
         }
       },
       "diff_pair_dimensions": [
@@ -60,24 +60,24 @@
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "warning",
         "clearance": "error",
-        "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "copper_edge_clearance": "warning",
+        "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "error",
+        "drill_out_of_range": "warning",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint_type_mismatch": "error",
-        "hole_clearance": "error",
-        "hole_near_hole": "error",
+        "hole_clearance": "warning",
+        "hole_near_hole": "warning",
         "invalid_outline": "error",
         "item_on_disabled_layer": "error",
-        "items_not_allowed": "error",
-        "length_out_of_range": "error",
-        "malformed_courtyard": "error",
-        "microvia_drill_out_of_range": "error",
+        "items_not_allowed": "warning",
+        "length_out_of_range": "warning",
+        "malformed_courtyard": "ignore",
+        "microvia_drill_out_of_range": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
@@ -87,15 +87,15 @@
         "shorting_items": "error",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
-        "skew_out_of_range": "error",
+        "skew_out_of_range": "warning",
         "through_hole_pad_without_hole": "error",
-        "too_many_vias": "error",
-        "track_dangling": "warning",
-        "track_width": "error",
+        "too_many_vias": "warning",
+        "track_dangling": "error",
+        "track_width": "warning",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
@@ -103,7 +103,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.19999999999999998,
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -119,12 +119,21 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.3,
+        0.5,
+        0.75,
+        1.0
       ],
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
