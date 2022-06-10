@@ -1,0 +1,23 @@
+name: Build
+on: [push]
+jobs:
+  Build:
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Install gcc toolchain for arm
+        run: brew install armmbed/formulae/arm-none-eabi-gcc
+      - run: arm-none-eabi-gcc --version
+      - name: compile libopencm3
+        run: make TARGETS=stm32/l4 -j6
+        working-directory: ./software/stm/libopencm3
+      - name: compile application
+        run: make -j6
+        working-directory: ./software/stm
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ELF file
+          path: software/stm/out/pdsupply.elf
