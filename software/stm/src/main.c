@@ -7,6 +7,5 @@ int main(void) {
   init_micro();
 
   while (1) {
-    testFunc();
   }
 }

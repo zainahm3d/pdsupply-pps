@@ -36,6 +36,10 @@ static void clock_setup(void) {
   rcc_apb2_frequency = 80e6;
 }
 
+static void systick_init(void) {
+  // init 10ms systick here
+}
+
 static void gpio_init(void) {
   /* Enable clocks for the ports we need */
   rcc_periph_clock_enable(RCC_GPIOA);
@@ -50,5 +54,6 @@ static void gpio_init(void) {
 
 void init_micro(void) {
   clock_setup();
+  systick_init();
   gpio_init();
 }
