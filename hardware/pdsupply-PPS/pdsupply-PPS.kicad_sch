@@ -5703,6 +5703,22 @@
     (pin "1" (uuid 1a623a72-588f-495b-b345-808b8d90c77f))
   )
 
+  (symbol (lib_id "power:GND") (at 115.57 203.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid bf1f8108-d577-4329-93ff-c6541d59441c)
+    (property "Reference" "#PWR0102" (id 0) (at 115.57 209.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 115.57 207.645 0))
+    (property "Footprint" "" (id 2) (at 115.57 203.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 115.57 203.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 67c57a4b-cea1-4fff-aa71-d333465e4e8c))
+  )
+
   (symbol (lib_id "Device:D_Schottky_Small") (at 226.695 250.825 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c0b55925-714c-42fa-862f-899e2503ff58)
@@ -6368,6 +6384,9 @@
     )
     (path "/22aa5139-3981-4f8a-84ad-deca672782ea"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/bf1f8108-d577-4329-93ff-c6541d59441c"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
     )
     (path "/5fa9c18e-a21f-4331-abe2-b895eed2ac96"
       (reference "+3.3V1") (unit 1) (value "RCU-0C") (footprint "RCU-0C:TP+195X110")
