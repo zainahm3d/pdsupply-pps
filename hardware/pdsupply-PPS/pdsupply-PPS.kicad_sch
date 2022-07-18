@@ -525,13 +525,13 @@
       )
     )
     (symbol "FPF2895UCX:FPF2895UCX" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
-      (property "Reference" "IC?" (id 0) (at 17.78 8.255 0)
+      (property "Reference" "IC2" (id 0) (at 17.78 8.255 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Value" "FPF2895UCX" (id 1) (at 17.78 5.715 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "BGA24C40P4X6_167X260X61" (id 2) (at 24.13 17.78 0)
+      (property "Footprint" "FPF2895:BGA24C40P4X6_167X260X61" (id 2) (at 24.13 17.78 0)
         (effects (font (size 1.27 1.27)) (justify left) hide)
       )
       (property "Datasheet" "http://static6.arrow.com/aropdfconversion/42e2c531d828d813d52774c7ac75f1e68f1f2dfe/3669586278616490fpf2895.pdf" (id 3) (at 24.13 15.24 0)
@@ -565,7 +565,7 @@
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "FPF2895UCX_0_0"
-        (pin no_connect line (at 0 0 0) (length 5.08)
+        (pin passive line (at 0 0 0) (length 5.08)
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "A1" (effects (font (size 1.27 1.27))))
         )
@@ -1917,6 +1917,7 @@
     )
   )
 
+
   (junction (at 47.625 69.215) (diameter 0) (color 0 0 0 0)
     (uuid 0057ab6b-a4b5-4b76-bb5b-946da6883ef6)
   )
@@ -2281,9 +2282,9 @@
   (no_connect (at 147.955 149.86) (uuid bc73c25b-a43a-47ef-9bd4-6388b5d26304))
   (no_connect (at 147.955 142.24) (uuid bc73c25b-a43a-47ef-9bd4-6388b5d26305))
   (no_connect (at 307.975 79.375) (uuid ca66decb-1724-4443-9c69-f3513f2c18fe))
-  (no_connect (at 307.975 81.915) (uuid ca66decb-1724-4443-9c69-f3513f2c18fe))
-  (no_connect (at 307.975 84.455) (uuid ca66decb-1724-4443-9c69-f3513f2c18fe))
-  (no_connect (at 307.975 86.995) (uuid ca66decb-1724-4443-9c69-f3513f2c18fe))
+  (no_connect (at 307.975 81.915) (uuid ca66decb-1724-4443-9c69-f3513f2c18ff))
+  (no_connect (at 307.975 84.455) (uuid ca66decb-1724-4443-9c69-f3513f2c1900))
+  (no_connect (at 307.975 86.995) (uuid ca66decb-1724-4443-9c69-f3513f2c1901))
   (no_connect (at 47.625 42.545) (uuid e32ea772-1eea-4a15-8d84-910ebbfc625a))
   (no_connect (at 47.625 45.085) (uuid ff8ff961-f3d3-403a-a8b6-9fbf2e48e571))
 
@@ -3805,7 +3806,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5db9106d-b510-4112-a294-6e91b3b12ef0)
   )
-  (label "VBUS_Rdy" (at 67.945 127 0)
+  (label "VBUS_Rdy" (at 91.44 127 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 68a69709-4f18-41a8-9e13-d82ceed58f09)
   )
@@ -4188,7 +4189,7 @@
   (symbol (lib_name "RCU-0C_1") (lib_id "RCU-0C:RCU-0C") (at 199.39 78.105 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 28ec1f29-4986-4a9a-a39a-5d540d191da2)
-    (property "Reference" "CC1" (id 0) (at 199.39 76.2 0)
+    (property "Reference" "CC2" (id 0) (at 199.39 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RCU-0C" (id 1) (at 195.58 73.66 0)
@@ -5093,7 +5094,7 @@
   (symbol (lib_name "RCU-0C_1") (lib_id "RCU-0C:RCU-0C") (at 203.835 78.105 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 8aae3a86-de62-4041-9db6-c32f65e87d6d)
-    (property "Reference" "CC2" (id 0) (at 203.835 76.2 0)
+    (property "Reference" "CC1" (id 0) (at 203.835 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RCU-0C" (id 1) (at 200.025 73.66 0)
@@ -6158,7 +6159,7 @@
   (symbol (lib_name "RCU-0C_1") (lib_id "RCU-0C:RCU-0C") (at 367.03 162.56 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid fbd889ba-0203-4e1d-b7b8-0e0db91a05b2)
-    (property "Reference" "Isense1" (id 0) (at 367.03 160.655 0)
+    (property "Reference" "Isense1" (id 0) (at 370.205 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RCU-0C" (id 1) (at 363.22 158.115 0)
@@ -6371,10 +6372,10 @@
     (path "/46ee1bbe-194d-4b85-8486-d2eb2d990ebc"
       (reference "C18") (unit 1) (value ".1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/28ec1f29-4986-4a9a-a39a-5d540d191da2"
+    (path "/8aae3a86-de62-4041-9db6-c32f65e87d6d"
       (reference "CC1") (unit 1) (value "RCU-0C") (footprint "RCU-0C:TP+195X110")
     )
-    (path "/8aae3a86-de62-4041-9db6-c32f65e87d6d"
+    (path "/28ec1f29-4986-4a9a-a39a-5d540d191da2"
       (reference "CC2") (unit 1) (value "RCU-0C") (footprint "RCU-0C:TP+195X110")
     )
     (path "/40f6e887-23fc-4a76-aea9-691bca8d4e9c"
